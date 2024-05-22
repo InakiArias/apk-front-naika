@@ -37,8 +37,28 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# DOC PROPIA
+# OWN DOCUMENTATION
 
 ## List of added libraries
+
     - Next (From Docs)
-    - Shadcn
+    - Front Components
+        - Mantine
+    - NextAuth
+
+## List of pending libraries
+
+    - Fetch
+        - SWR
+        - React Query
+    - Animation
+        - Framer Motion
+    - Jest
+    - Storybook
+    - Front Components
+        - Shadcn
+    - Validation
+        - Zod
+        - React-hook-form
+    - Data
+        - Lodash
