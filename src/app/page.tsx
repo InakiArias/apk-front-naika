@@ -1,3 +1,4 @@
+import MaterialIcon from "@/components/icons/MaterialIcon";
 import Image from "next/image";
 
 const links = [
@@ -39,6 +40,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
+              className="dark:invert"
               src="/naika.svg"
               alt="Naika Logo"
               width={100}
@@ -52,7 +54,7 @@ export default function Home() {
       <div className="relative z-[-1] lg:z-0 flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
         <div className="h-full w-full relative">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] hidden lg:block object-contain max-w-full"
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] hidden lg:block object-contain max-w-full dark:invert"
             src="/naika-full.svg"
             alt="Naika Logo"
             height={500}
@@ -67,15 +69,11 @@ export default function Home() {
           <a
             href={link}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-400 hover:border-black hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
             rel="noopener noreferrer"
             key={link}
           >
             <h2 className="mb-3 text-2xl font-semibold">
-              {name}{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              <MaterialIcon name="pie_chart" className="text-blue-900" /> {name}
             </h2>
             <p className="m-0 text-sm opacity-50">
               Naika link. Lorem ipsum sit amet.
