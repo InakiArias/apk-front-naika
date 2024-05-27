@@ -1,12 +1,9 @@
 import { DoubleNavbar } from "@/components/navbar/DoubleNavbar";
 
-export default async function Documentos({ mundo = "pepe" }: any) {
-    const secs = 0
+export default async function Documentos({}: any) {
+  const secs = 5;
 
-    const x = await new Promise((r) => setTimeout(() => r(secs), secs * 1000));
+  const x = await new Promise((r) => setTimeout(() => r(secs), secs * 1000));
 
-    return <>
-        <DoubleNavbar />
-        hola mundo {x}
-    </>
+  return <>hola mundo {x}</>;
 }
