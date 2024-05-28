@@ -57,8 +57,8 @@
   &[data-active] {
     &,
     &:hover {
-      background-color: var(--mantine-color-blue-light);
-      color: var(--mantine-color-blue-light-color);
+      background-color: var(--naika-green);
+      color: var(--mantine-color-dark-0);
     }
   }
 }
