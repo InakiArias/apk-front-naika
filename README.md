@@ -45,6 +45,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     - Front Components
         - Mantine
     - NextAuth
+    - Icons
+        - Tabler Icons
+        - Material Icons
 
 ## List of pending libraries
 

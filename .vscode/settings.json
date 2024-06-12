@@ -1,24 +1,27 @@
 {
-  "peacock.color": "#005024",
+  "peacock.color": "#2F508E",
   "editor.formatOnSave": true,
   "files.exclude": {},
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#00833b",
-    "activityBar.background": "#00833b",
+    "activityBar.activeBackground": "#3c66b4",
+    "activityBar.background": "#3c66b4",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#5600bf",
-    "activityBarBadge.foreground": "#e7e7e7",
+    "activityBarBadge.background": "#d787a3",
+    "activityBarBadge.foreground": "#15202b",
     "commandCenter.border": "#e7e7e799",
-    "sash.hoverBorder": "#00833b",
-    "statusBar.background": "#005024",
+    "sash.hoverBorder": "#3c66b4",
+    "statusBar.background": "#2f508e",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#00833b",
-    "statusBarItem.remoteBackground": "#005024",
+    "statusBarItem.hoverBackground": "#3c66b4",
+    "statusBarItem.remoteBackground": "#2f508e",
     "statusBarItem.remoteForeground": "#e7e7e7",
-    "titleBar.activeBackground": "#005024",
+    "titleBar.activeBackground": "#2f508e",
     "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#00502499",
+    "titleBar.inactiveBackground": "#2f508e99",
     "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/*.tsx": "${dirname}/${filename}.${extname}"
   }
 }
