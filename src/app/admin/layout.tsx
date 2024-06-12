@@ -9,17 +9,15 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef } from "react";
 
 export default function AdminLayout({ children }: any) {
-  const [opened, { toggle }] = useDisclosure();
+  const [opened, { toggle, close }] = useDisclosure();
 
-  const toggleStable = useStable(toggle);
-
-  const numberStable = useStable((number: number) => number);
+  const closeStable = useStable(close);
 
   const route = usePathname();
 
   useEffect(() => {
-    toggleStable();
-  }, [route, toggleStable]);
+    closeStable();
+  }, [route, closeStable]);
 
   return (
     <>

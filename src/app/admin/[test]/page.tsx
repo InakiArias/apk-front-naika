@@ -75,7 +75,9 @@ export default function Home() {
               <MaterialIcon name="pie_chart" /> {name}
             </h2>
             <p className="m-0 text-sm opacity-50">
-              Naika link. Lorem ipsum sit amet.
+              Naika link. Lorem ipsum sit amet. ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+              abcdefghijklmnñopqrstuvwxyz
+              1234567890
             </p>
           </a>
         ))}

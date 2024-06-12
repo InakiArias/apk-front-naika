@@ -5,23 +5,28 @@ const links = [
   {
     name: "Mis documentos",
     link: "documentos",
+    icon: "description"
   },
   {
     name: "Mis negocios",
     link: "negocios",
+    icon: "business_center"
   },
   {
     name: "Mi saldo",
     link: "saldo",
+    icon: "account_balance_wallet"
   },
   {
     name: "Mi logística",
     link: "logistica",
+    icon: "local_shipping"
   },
   {
     name: "Información útil",
     link: "info",
-  },
+    icon: "info"
+  }
 ];
 
 export default function Home() {
@@ -32,7 +37,7 @@ export default function Home() {
           Hola&nbsp;
           <code className="font-mono font-bold">mundo de Naika.</code>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-36 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-0 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -64,7 +69,7 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full gap-1 lg:grid-cols-5 lg:text-left">
-        {links.map(({ name, link }) => (
+        {links.map(({ name, link, icon }) => (
           <a
             href={link}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-400 hover:border-black hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -72,10 +77,12 @@ export default function Home() {
             key={link}
           >
             <h2 className="mb-3 text-2xl font-semibold">
-              <MaterialIcon name="pie_chart" /> {name}
+              <MaterialIcon name={icon} /> {name}
             </h2>
             <p className="m-0 text-sm opacity-50">
-              Naika link. Lorem ipsum sit amet.
+              Naika link. Lorem ipsum sit amet. ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+              abcdefghijklmnñopqrstuvwxyz
+              1234567890
             </p>
           </a>
         ))}

@@ -25,7 +25,7 @@ export function Header({ opened, toggle }: Props) {
         onClick={toggle}
         hiddenFrom="md"
         size="md"
-        color="naika-green"
+        color="naika-blue"
       />
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] hidden lg:block object-contain max-w-full"

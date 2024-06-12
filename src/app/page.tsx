@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Start() {
-  return "start";
+  return redirect("admin/home") ?? "start";
 }

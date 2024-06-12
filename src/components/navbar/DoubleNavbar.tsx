@@ -29,7 +29,7 @@ const mainLinksData = [
       "Mi saldo",
       "Mi logística",
       "Información útil",
-      "Test Loading",
+      // "Test Loading",
     ],
   },
   {
@@ -56,7 +56,7 @@ export function DoubleNavbar() {
 
   const [active, setActive] = useState(
     mainLinksData.find((l) => getLink(l.label) === activeLinkName)?.label ??
-      "Home"
+    "Home"
   );
 
   console.log({ pathname });
